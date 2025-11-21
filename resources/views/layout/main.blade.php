@@ -41,8 +41,6 @@
                 
             </nav>
 
-            <div class="bg-red-500 text-white p-4">Teste Tailwind</div>
-
         </header>
         @yield('content')
         <Footer>
@@ -53,4 +51,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
         integrity="sha384-LtrjvnR4/J57r5Jv8Pp2XnA2Q6bOe2kU5XDGVqsMtKCOaiI6fN5VZV4Gd9N8by5w"
         crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
