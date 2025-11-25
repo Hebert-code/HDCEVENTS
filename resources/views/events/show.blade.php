@@ -17,9 +17,13 @@
         <a href="#" class="btn btn-primary" id="event-submit">Confirmar Presença</a>
         <h3>O Evento conta com:</h3>
         <ul id="items-list">
-          @foreach($event->items as $item)
-            <li><ion-icon name="play-outline"></ion-icon> <span>{{ $item }}</span></li>
-          @endforeach
+          @if(!empty($event->items))
+              @foreach($event->items as $item)
+                  <li><ion-icon name="play-outline"></ion-icon> <span>{{ $item }}</span></li>
+              @endforeach
+          @else
+              <li>Nenhum item cadastrado para este evento.</li>
+          @endif
         </ul>
       </div>
       <div class="col-md-12" id="description-container">
