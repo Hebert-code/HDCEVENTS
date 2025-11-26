@@ -216,6 +216,15 @@ description-container {
   margin-top: 20px;
 }
 
+#info-container .already-joined-msg {
+  background-color: #CCE5FF;
+  color: #004085;
+  border: 1px solid #B8DAFF;
+  width: 275px;
+  padding: 10px;
+  margin: 15px 0
+}
+
 /* footer */
 footer {
   text-align: center;

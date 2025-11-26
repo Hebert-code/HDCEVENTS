@@ -22,7 +22,6 @@ Route::get('/produtos', function (){
 
 Route::get('/dashboard', [EventController::class, 'dashboard'])->middleware(['auth']);
 
-Route::get('/produtos/{id?}', function ($id = 1) {
-    return view('product', ['id' => $id]);
-});
+Route::post('/events/join/{id}', [EventController::class, 'joinEvent'])->middleware('auth');
+Route::delete('/events/leave/{id}', [EventController::class, 'leaveEvent'])->middleware('auth');
 
